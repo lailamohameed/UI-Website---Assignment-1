@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Registration Campus Events Guide
+    </title>
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+    <input class="dark-checkbox"
+           type="checkbox"
+           id="dark-mode">
+    <div class="site">
+        <header>
+            <div class="header-inner">
+                <p class="site-name">
+                    Campus Events Guide
+                </p>
+                <label class="theme-toggle"
+                       for="dark-mode">
+                    Dark Mode
+                </label>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="events.html">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="event-details.html">
+                            Event Details
+                        </a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">
+                            Schedule
+                        </a>
+                    </li>
+                    <li>
+                        <a href="registration.html">
+                            Registration
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <main class="page-container">
+            <h1>
+                Event Registration
+            </h1>
+            <section class="featured-registration">
+                <h2>
+                    Register for AI &amp; Innovation Day
+                </h2>
+                <p class="event-meta">
+                    <strong>
+                        Event Date:
+                    </strong>
+                    26oct 2026
+                </p>
+
+
+                <p class="event-meta">
+                    <strong>
+                        Venue:
+                    </strong>
+                    Innovation Hall
+                </p>
+            </section>
+
+
+
+            <section class="form-card">
+                <h2>
+                    Registration Form
+                </h2>
+                <form>
+                    <div class="form-grid">
+                        <div class="form-row">
+                            <label for="attendee-name">
+                                Attendee Name
+                            </label>
+                            <input type="text"
+                                   id="attendee-name"
+                                   name="attendee-name"
+                                   required
+                                   maxlength="40"
+                                   pattern="[A-Za-z ]{3,40}"
+                                   placeholder="Enter your full name">
+                        </div>
+
+
+
+                        <div class="form-row">
+                            <label for="attendee-email">
+                                Email Address
+                            </label>
+                            <input type="email"
+                                   id="attendee-email"
+                                   name="attendee-email"
+                                   required
+                                   placeholder="name@example.com">
+                        </div>
+
+
+                        <div class="form-row">
+                            <label for="profile-url">
+                                Student Profile URL
+                            </label>
+                            <input type="url"
+                                   id="profile-url"
+                                   name="profile-url"
+                                   placeholder="https://example.com">
+                        </div>
+                        <div class="form-row">
+                            <label for="guest-number">
+                                Number of Attendees
+                            </label>
+                            <input type="number"
+                                   id="guest-number"
+                                   name="guest-number"
+                                   min="1"
+                                   max="3"
+                                   value="1"
+                                   required>
+                        </div>
+
+
+                        <div class="form-row">
+                            <label for="interest-level">
+                                Interest Level (1 to 10)
+                            </label>
+                            <input type="range"
+                                   id="interest-level"
+                                   name="interest-level"
+                                   min="1"
+                                   max="10"
+                                   value="7">
+                        </div>
+
+
+                        <div class="form-row">
+                            <label for="event-date">
+                                Event Date
+                            </label>
+                            <input type="date"
+                                   id="event-date"
+                                   name="event-date"
+                                   value="2026-10-10"
+                                   min="2026-10-10"
+                                   max="2026-10-10"
+                                   required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="badge-color">
+                                Badge Color
+                            </label>
+                            <input type="color"
+                                   id="badge-color"
+                                   name="badge-color"
+                                   value="#1e6b8f">
+                        </div>
+
+
+                        <div class="form-row">
+                            <label for="arrival-time">
+                                Expected Arrival Time
+                            </label>
+
+
+                            <input type="time"
+                                   id="arrival-time"
+                                   name="arrival-time"
+                                   min="09:30"
+                                   max="10:30"
+                                   required>
+                        </div>
+
+
+                        <div class="form-row">
+                            <label for="student-file">
+                                Upload Student ID or Access Document
+                            </label>
+                            <input type="file"
+                                   id="student-file"
+                                   name="student-file">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="event-choice">
+                                Event Choice
+                            </label>
+
+                            <select id="event-choice"
+                                    name="event-choice"
+                                    required>
+                                <option value="">
+                                    Choose an event
+                                </option>
+
+                                <option value="ai"
+                                        selected>
+                                    AI &amp; Innovation Day
+                                </option>
+
+                                <option value="robotics">
+                                    Robotics Workshop
+                                </option>
+
+                                <option value="science-night">
+                                    Science Club Night
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="choice-group">
+                        <p class="form-label">
+                            Registration Type
+                        </p>
+
+                        <input type="radio"
+                               id="student-ticket"
+                               name="registration-type"
+                               value="student"
+                               required>
+                        <label for="student-ticket">
+                            Student Ticket
+                        </label>
+
+                        <input type="radio"
+                               id="guest-ticket"
+                               name="registration-type"
+                               value="guest">
+                        <label for="guest-ticket">
+                            Guest Ticket
+                        </label>
+                    </div>
+
+                    <div class="choice-group">
+                        <input type="checkbox"
+                               id="updates"
+                               name="updates">
+                        <label for="updates">
+                            Send me updates about future campus events
+                        </label>
+                    </div>
+
+                    <div class="choice-group">
+                        <input type="checkbox"
+                               id="rules"
+                               name="rules"
+                               required>
+                        <label for="rules">
+                            I agree to follow the event rules
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="access-needs">
+                            Access Needs or Notes
+                        </label>
+                        <textarea id="access-needs"
+                                  name="access-needs"
+                                  rows="5"
+                                  cols="30"
+                                  maxlength="300"
+                                  placeholder="Write any access needs or notes"></textarea>
+                    </div>
+
+
+                    <input class="submit-button"
+                           type="submit"
+                           value="Complete Registration">
+                </form>
+            </section>
+
+            <section class="information-card">
+                <h2>
+                    Event Contact
+                </h2>
+                <p>
+                    <strong>
+                        Email:
+                    </strong>
+                    <a href="laila@gmail.com">
+                        l@gmail.com
+                    </a>
+                </p>
+                <p>
+                    <strong>
+                        Location:
+                    </strong>
+                    Student Activities Office,
+                    University Campus
+                </p>
+                <p>
+                    <strong>
+                        Office Hours:
+                    </strong>
+                    9:00 AM - 3:00 PM
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                Campus Events Guide
+            </p>
+            <p class="social-links">
+                <a href="https://www.instagram.com/"
+                   target="_blank">
+                    Instagram
+                </a>
+                <a href="https://www.facebook.com/"
+                   target="_blank">
+                    Faceboo
+                </a>
+                <a href="https://www.youtube.com/"
+                   target="_blank">
+                    youtube
+                </a>
+                <a href="https://github.com/lailamohameed"
+                   target="_blank">
+                    GitHub 
+                </a>
+            </p>
+
+
+            <p class="footer-note">
+                SW302 HTML &amp; CSS Assignment
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

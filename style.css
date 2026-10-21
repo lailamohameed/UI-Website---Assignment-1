@@ -1,0 +1,663 @@
+:root {
+    --page-bg: #eef3f8;
+    --card-bg: #ffffff;
+    --text-color: #1f2937;
+    --accent-color: #1e6b8f;
+    --accent-dark: #164d68;
+    --border-color: #cbd5e1;
+    --soft-bg: #dfeef4;
+
+}
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: var(--page-bg);
+
+    color: var(--text-color);
+
+    line-height: 1.6;
+
+}
+
+
+.site {
+
+    min-height: 100vh;
+
+    background-color: var(--page-bg);
+
+    color: var(--text-color);
+
+}
+
+.dark-checkbox {
+
+    position: absolute;
+
+    left: -9999px;
+
+}
+
+
+.dark-checkbox:checked ~ .site {
+
+    --page-bg: #121820;
+    --card-bg: #202a35;
+    --text-color: #f3f6f9;
+    --accent-color: #83cce8;
+    --accent-dark: #b9e8f8;
+    --border-color: #5d6b78;
+    --soft-bg: #2b3946;}
+
+header {
+
+    background-color: var(--card-bg);
+    border-bottom: 3px solid var(--accent-color);}
+
+
+.header-inner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.site-name {
+    margin: 0 0 0.6rem 0;
+    color: var(--accent-color);
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.theme-toggle {
+    display: inline-block;
+    padding: 0.45rem 0.9rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 0.5rem;
+    color: var(--accent-color);
+    background-color: var(--card-bg);
+    font-weight: bold;
+    cursor: pointer;
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+}
+
+
+.theme-toggle:hover {
+
+    background-color: var(--accent-color);
+
+    color: var(--card-bg);
+
+}
+
+
+nav {
+    background-color: var(--accent-color);}
+
+
+nav ul {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;}
+nav ul li {
+    margin: 0.25rem;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.55rem 0.8rem;
+    color: var(--card-bg);
+    text-decoration: none;
+    border: 1px solid var(--card-bg);
+    border-radius: 0.4rem;
+    transition:
+        background-color 0.3s,
+        color 0.3s;}
+
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: var(--card-bg);
+    color: var(--accent-color);}
+.page-container {
+    width: 88%;
+    margin: 0 auto;
+    padding: 2rem 0 3rem 0;
+
+}
+
+h1,
+h2,
+h3 {
+    color: var(--accent-dark);
+}
+h1 {
+
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+h2 {
+    border-bottom: 2px solid var(--border-color);
+
+    padding-bottom: 0.35rem;
+
+}
+
+.intro-section,
+.journey-section,
+.information-card,
+.form-card,
+.featured-registration,
+.detail-card {
+
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 0.7rem;
+
+    padding: 1.2rem;
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+.events-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr 1fr;
+
+    gap: 1.2rem;
+
+    margin-bottom: 2rem;
+
+}
+
+
+.past-events-grid {
+
+    grid-template-columns:
+        1fr 1fr;
+
+}
+
+.event-card {
+
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 0.7rem;
+
+    padding-bottom: 1rem;
+
+    transition:
+        border-color 0.3s,
+        background-color 0.3s;
+
+}
+
+
+.event-card:hover {
+
+    border-color: var(--accent-color);
+
+    background-color: var(--soft-bg);
+
+}
+
+
+.featured-card {
+
+    border-width: 3px;
+
+    border-color: var(--accent-color);
+
+}
+
+.event-card img,
+.detail-card img {
+
+    width: 100%;
+
+    height: auto;
+
+    border-bottom: 1px solid var(--border-color);
+
+}
+
+.card-content {
+
+    padding: 0 1rem;
+
+}
+
+
+.category {
+
+    display: inline-block;
+
+    padding: 0.2rem 0.55rem;
+
+    background-color: var(--soft-bg);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 0.4rem;
+
+    font-weight: bold;
+
+}
+
+
+.event-meta {
+
+    margin: 0.35rem 0;
+
+}
+
+.button,
+.submit-button {
+
+    display: inline-block;
+
+    margin-top: 0.7rem;
+
+    padding: 0.6rem 1rem;
+
+    background-color: var(--accent-color);
+
+    color: var(--card-bg);
+
+    border: 2px solid var(--accent-color);
+
+    border-radius: 0.45rem;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+
+}
+
+
+.button:hover,
+.button:focus,
+.submit-button:hover,
+.submit-button:focus {
+
+    background-color: var(--card-bg);
+
+    color: var(--accent-color);
+
+}
+
+.detail-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 1.3rem;
+
+}
+
+audio {
+
+    width: 90%;
+
+}
+
+form {
+
+    margin-top: 1rem;
+
+}
+
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 1rem;
+
+}
+
+
+.form-row {
+
+    margin-bottom: 1rem;
+
+}
+
+
+label,
+.form-label {
+
+    display: block;
+
+    margin-bottom: 0.3rem;
+
+    font-weight: bold;
+
+}
+
+input,
+select,
+textarea {
+
+    width: 94%;
+
+    padding: 0.6rem;
+
+    border: 2px solid var(--border-color);
+
+    border-radius: 0.35rem;
+
+    background-color: var(--card-bg);
+
+    color: var(--text-color);
+
+    font-family: Arial, sans-serif;
+
+    transition:
+        border-color 0.3s,
+        background-color 0.3s;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border-color: var(--accent-color);
+
+    background-color: var(--soft-bg);
+
+}
+
+
+/* Radio and checkbox controls
+   should not use full width */
+
+input[type="radio"],
+input[type="checkbox"] {
+
+    width: auto;
+
+    margin-right: 0.35rem;
+
+}
+
+
+input[type="color"] {
+
+    width: 5rem;
+
+    height: 3rem;
+
+}
+
+
+input[type="range"] {
+
+    width: 90%;
+
+}
+
+.choice-group {
+
+    margin: 1rem 0;
+
+    padding: 0.8rem;
+
+    background-color: var(--soft-bg);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 0.4rem;
+
+}
+
+
+.choice-group label {
+
+    display: inline;
+
+    margin-right: 1rem;
+
+}
+
+
+.table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: var(--card-bg);
+
+}
+
+
+th,
+td {
+
+    border: 1px solid var(--border-color);
+
+    padding: 0.8rem;
+
+    text-align: left;
+
+}
+th {
+
+    background-color: var(--accent-color);
+
+    color: var(--card-bg);
+
+}
+
+.featured-row {
+
+    background-color: var(--soft-bg);
+
+    font-weight: bold;
+
+}
+ol,
+ul {
+
+    padding-left: 1.5rem;
+
+}
+
+footer {
+
+    background-color: var(--card-bg);
+
+    border-top: 3px solid var(--accent-color);
+
+    padding: 1.4rem 5%;
+
+    text-align: center;
+
+}
+
+footer p {
+
+    margin: 0.35rem 0;
+
+}
+
+.social-links a {
+
+    margin: 0 0.45rem;
+
+    color: var(--accent-dark);
+
+    text-decoration: none;
+
+    transition: color 0.3s;
+
+}
+.social-links a:hover,
+.social-links a:focus {
+
+    color: var(--accent-color);
+
+    text-decoration: underline;
+
+}
+.footer-note {
+
+    font-size: 0.9rem;
+
+}
+
+@media (max-width: 767px) {
+
+
+    .page-container {
+
+        width: 92%;
+
+        padding-top: 1.2rem;
+
+    }
+    nav ul {
+
+        width: 92%;
+
+        flex-direction: column;
+
+    }
+    nav ul li {
+        width: 100%;
+        margin: 0.15rem 0;
+
+    }
+
+    nav ul li a {
+        text-align: center;
+    }
+    .events-grid,
+    .past-events-grid,
+    .detail-grid,
+    .form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+    h1 {
+
+        font-size: 1.7rem;
+
+    }
+    h2 {
+
+        font-size: 1.3rem;
+
+    }
+    .button,
+    .submit-button {
+
+        width: 90%;
+
+        text-align: center;
+
+    }
+
+    audio {
+
+        width: 100%;
+
+    }
+
+}
+@media (min-width: 768px)
+       and (max-width: 1279px) {
+
+
+    .page-container {
+
+        width: 90%;
+
+    }
+
+
+    .events-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .past-events-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+
+    .page-container {
+
+        width: 82%;
+
+    }
+
+
+    .header-inner,
+    nav ul {
+
+        width: 82%;
+
+    }
+
+
+    .events-grid {
+
+        grid-template-columns:
+            1fr 1fr 1fr;
+
+    }
+
+}

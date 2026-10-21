@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Event Details Campus Events Guide
+    </title>
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+<body>
+    <input class="dark-checkbox"
+           type="checkbox"
+           id="dark-mode">
+    <div class="site">
+        <header>
+            <div class="header-inner">
+                <p class="site-name">
+                    Campus Events Guide
+                </p>
+                <label class="theme-toggle"
+                       for="dark-mode">
+                    Dark Mode
+                </label>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="events.html">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="event-details.html">
+                            Event Details
+                        </a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">
+                            Schedule
+                        </a>
+                    </li>
+                    <li>
+                        <a href="registration.html">
+                            Registration
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="page-container">
+            <h1>
+                AI &amp; Innovation Day
+            </h1>
+            <section class="detail-grid">
+                <article class="detail-card">
+                    <img src="assets/ai-innovation-day.png"
+                         alt="Poster for AI and Innovation Day">
+                </article>
+
+                <article class="detail-card">
+                    <h2>
+                        AI &amp; Innovation Day
+                    </h2>
+                    <p>
+                        AI &amp; Innovation Day brings students together
+                        for short talks and discussions about how artificial intelligence
+                        can support research.
+                    </p>
+
+
+                    <p class="event-meta">
+                        <strong>Date:</strong>
+                        26oct 2026
+                    </p>
+                    <p class="event-meta">
+                        <strong>Time:</strong>
+                        10:00 AM - 2:00 PM
+                    </p>
+                    <p class="event-meta">
+                        <strong>Venue:</strong>
+                        Innovation Hall
+                    </p>
+
+                    <p class="event-meta">
+                        <strong>Entry:</strong>
+                        Free for university students.
+                        Registration is required.
+                    </p>
+                    <a class="button"
+                       href="registration.html">
+                        Register for AI &amp; Innovation Day
+                    </a>
+                </article>
+            </section>
+
+
+
+            <section class="information-card">
+                <h2>
+                    Event Agenda
+                </h2>
+                <ol>
+                    <li>
+                        10:00 AM - Welcome and event introduction
+                    </li>
+                    <li>
+                        10:30 AM - Student AI project presentations
+                    </li>
+                    <li>
+                        11:30 AM - Innovation talk
+                    </li>
+                    <li>
+                        12:30 PM - Project demonstrations
+                    </li>
+                    <li>
+                        1:30 PM - Questions and closing discussion
+                    </li>
+                </ol>
+            </section>
+
+            <section class="information-card">
+                <h2>
+                    Event Media
+                </h2>
+                <p>
+                    Play the short event introduction sound below.
+                </p>
+                <audio controls>
+
+                    <source src="assets/event-intro.wav"
+                            type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+
+            <section class="form-card">
+                <h2>
+                    Event Review Form
+                </h2>
+                <p>
+                    Students who attended a campus event
+                    can leave a short review.
+                </p>
+
+
+
+                <form>
+                    <div class="form-row">
+                        <label for="review-name">
+                            Student Name
+                        </label>
+                        <input type="text"
+                               id="review-name"
+                               name="review-name"
+                               required
+                               maxlength="40"
+                               pattern="[A-Za-z ]{3,40}"
+                               placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="review-email">
+                            Email
+                        </label>
+                        <input type="email"
+                               id="review-email"
+                               name="review-email"
+                               required
+                               placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="review-rating">
+                            Rating
+                        </label>
+                        <select id="review-rating"
+                                name="review-rating"
+                                required>
+                            <option value="">
+                                Choose a rating
+                            </option>
+                            <option value="5">
+                                5 - Excellent
+                            </option>
+                            <option value="4">
+                                4 - VGood
+                            </option>
+                            <option value="3">
+                                3 - Good
+                            </option>
+                            <option value="2">
+                                2 - acceptable
+                            </option>
+                            <option value="1">
+                                1 - bad
+                            </option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="form-row">
+                        <label for="review-comments">
+                            Review
+                        </label>
+                        <textarea id="review-comments"
+                                  name="review-comments"
+                                  rows="5"
+                                  cols="30"
+                                  required
+                                  maxlength="300"
+                                  placeholder="Write your review"></textarea>
+                    </div>
+
+
+
+                    <div class="form-row">
+                        <label for="review-file">
+                            Upload a Photo or Review File
+                        </label>
+                        <input type="file"
+                               id="review-file"
+                               name="review-file">
+                    </div>
+                    <input class="submit-button"
+                           type="submit"
+                           value="Submit Review">
+                </form>
+            </section>
+        </main>
+
+
+
+        <footer>
+            <p>
+                Campus Events Guide
+            </p>
+            <p class="social-links">
+                <a href="https://www.instagram.com/"
+                   target="_blank"></a>
+                    Instagram
+                </a>
+
+                <a href="https://www.facebook.com/"
+                   target="_blank">
+                    Facebook
+                </a>
+                <a href="https://www.youtube.com/"
+                   target="_blank">
+                    YouTube
+            </a>
+                <a href="https://github.com/lailamohameed"
+                   target="_blank">
+                    GitHub 
+                </a>
+            </p>
+            <p class="footer-note">
+                SW302 HTML &amp; CSS Assignment
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
